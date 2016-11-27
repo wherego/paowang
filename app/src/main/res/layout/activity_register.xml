@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mb_blue"
+    tools:context="com.chengyu.paowang.ui.RegisterActivity">
+
+    <include
+        android:id="@+id/headbar"
+        layout="@layout/item_headbar"/>
+
+    <com.chengyu.paowang.widget.CircleImageView
+        android:id="@+id/img_head"
+        android:layout_below="@+id/headbar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/img_head"
+        android:transitionName="img_head"
+        app:border_color="@color/colorAccent"
+        app:border_width="2dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_below="@+id/img_head"
+        android:id="@+id/a1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_login_username"
+            android:scaleType="centerCrop"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textColorHint="@color/colorHintText">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_edit"
+                android:hint="@string/hint_Username"
+                android:inputType="textPersonName"
+                android:paddingBottom="2dp"
+                android:textColor="#2fa881"
+                android:textCursorDrawable="@drawable/bg_input_cursor"
+                android:textSize="17sp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/a1"
+        android:id="@+id/a2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_login_password"
+            android:scaleType="centerCrop"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textColorHint="@color/colorHintText">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_edit"
+                android:hint="@string/hint_Password"
+                android:inputType="textPersonName"
+                android:paddingBottom="2dp"
+                android:textColor="#2fa881"
+                android:textCursorDrawable="@drawable/bg_input_cursor"
+                android:textSize="17sp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/a2"
+        android:id="@+id/a3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_register_email"
+            android:scaleType="centerCrop"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textColorHint="@color/colorHintText">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_edit"
+                android:hint="@string/hint_Emai"
+                android:inputType="textPersonName"
+                android:paddingBottom="2dp"
+                android:textColor="#2fa881"
+                android:textCursorDrawable="@drawable/bg_input_cursor"
+                android:textSize="17sp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <com.dd.morphingbutton.MorphingButton
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/a4"
+        android:id="@+id/but_register"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorWhite"
+        android:text="注册"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/a4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/a3"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_toRightOf="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textColorHint="@color/colorHintText">
+
+            <EditText
+                android:id="@+id/et_checkNumer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_edit"
+                android:hint="@string/hint_CheckNum"
+                android:inputType="textPersonName"
+                android:paddingBottom="2dp"
+                android:textColor="#2fa881"
+                android:textCursorDrawable="@drawable/bg_input_cursor"
+                android:textSize="17sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/but_check"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/but_smscheckout"
+            android:text="获取验证码"
+            android:visibility="visible"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_register_smscheck"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <include
+        android:visibility="gone"
+        layout="@layout/item_anim"/>
+
+    <include
+        layout="@layout/item_snackbar"/>
+
+</RelativeLayout>

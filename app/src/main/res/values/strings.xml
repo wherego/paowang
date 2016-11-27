@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">泡网</string>
+    <string name="hint_Username">账号/手机号</string>
+    <string name="hint_Password">密码</string>
+    <string name="hint_Emai">邮箱</string>
+    <string name="hint_CheckNum">短信验证码</string>
+</resources>
